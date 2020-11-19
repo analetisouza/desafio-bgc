@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
+    <meta charset="utf-8">
     <title>Toys R Joy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div id="menu">
+        <nav id="menu">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -15,18 +16,18 @@
             <div id="botao-reserva">
                  <a href="#reserva">Reservar</a>
             </div>
-        </div>
+        </nav>
     </header>
 
-    <div id="home">
+    <section id="home">
         <img src="/images/logo-1.svg">
         <h1>"A vida deve ser vivida como uma brincadeira"</h1>
         <div id="collection">
             <img src="/images/logo-min.svg">
         </div>
-    </div>
+    </section>
 
-    <div id="sobre">
+    <section id="sobre">
         <p>
             A Toys R Joy é uma empresa de brinquedos fundada em 2001 com o intuito de fornecer produtos 
             que apresentassem qualidade e durabilidade, mas que acima de tudo trouxessem alegria, diversão 
@@ -38,16 +39,18 @@
         </p>
 
         <img src="/images/minion-1.png">
-        <h2>Nossos <br> Diferenciais</h2>
-        <ul>
-            <li>★ Bonecos fiéis aos personagens em cada detalhe</li>
-            <li>★ Tinta hipoalergênica de alta durabilidade</li>
-            <li>★ Resistente contra quebra e arranhões em caso de quedas e acidentes</li>
-            <li>★ Seguro para uso de crianças pequenas</li>
-        </ul>
-    </div>
+        <div id="diferenciais">
+            <h2>Nossos <br> Diferenciais</h2>
+            <ul>
+                <li>★ Bonecos fiéis aos personagens em cada detalhe</li>
+                <li>★ Tinta hipoalergênica de alta durabilidade</li>
+                <li>★ Resistente contra quebra e arranhões em caso de quedas e acidentes</li>
+                <li>★ Seguro para uso de crianças pequenas</li>
+            </ul>
+        </div>
+    </section>
 
-    <div id="produtos">
+    <section id="produtos">
         <h1>Produtos</h1>
 
         <div class="produto">
@@ -81,9 +84,9 @@
                 universitário, tem direito a cela especial e 10% de desconto!
         </p>
         </div>
-    </div>
+    </section>
 
-    <div id="reserva">
+    <section id="reserva">
         <h1>Faça já uma reserva</h1>
         <form>
             <label for="nome">Nome</label><br>
@@ -105,7 +108,7 @@
             </select><br>
             <input type="submit" value="ENVIAR">
         </form>
-    </div>
+    </section>
 
     <footer>
         <img src="/images/logo-2.svg">
