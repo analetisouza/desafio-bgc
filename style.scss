@@ -88,11 +88,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 	font-weight: normal;
 }
 
-footer {
-    background-color: $amarelo;
-    width: 100%;
-}
-
 #menu {
     position: fixed;
     height: 100px;
@@ -118,7 +113,7 @@ footer {
                 &:visited {
                     color: $cinza;
                 }
-                &:hover {
+                &:hover, &:active {
                     color: $azul;
                 }
             }
@@ -156,14 +151,14 @@ footer {
 #home {
     img {
         margin-top: 80px;
-        margin-left: 100px;
+        margin-left: 120px;
         float: center;
         width: 488px;
         height: 388px;
     }
 
     h1 {
-        width: 600px;
+        width: 500px;
         margin-top: 200px;
         margin-right: 100px;
         color: $amarelo;
@@ -175,12 +170,14 @@ footer {
     }
 
     #collection {
-
-        width: 438px;
-        height: 200px;
-        margin-top: -100px;
-        margin-left: auto;
-        margin-right: auto;
+        img {
+            display: block;
+            width: 438px;
+            height: 200px;
+            margin-top: -50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 
@@ -196,12 +193,16 @@ footer {
         color: $azul;
         margin-top: -400px;
         margin-left: 712px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-family: $DCEB;
         font-size: 40px;
     }
     ul {
         width: 505px;
         color: $azul;
         margin-left: 712px;
+        font-family: $DVM;
         font-size: 20px;
         line-height: 30px;
     }
@@ -220,6 +221,7 @@ footer {
         color: $cinza;
         float: center;
         text-align: center;
+        font-family: $DVLI;
         font-size: 20px;
         line-height: 30px;
     }
@@ -235,14 +237,17 @@ footer {
     margin-top: 100px;
     h1 {
         color: $azul;
+        font-family: $DCEB;
         font-size: 60px;
         text-align: center;
+        padding-bottom: 20px;
     }
 }
 
 .produto {
 
     margin: 40px 210px;
+    display: inline-block;
 
     img {
         position: static;
@@ -253,17 +258,39 @@ footer {
         width: 490px;
         float: right;
         text-align: right;
+        font-family: $DCM;
         font-size: 40px;
-        background: red;
     }
     
     p {
         color: $cinza;
-        margin-top: 40px;
+        margin-top: -274px;
         width: 490px;
         float: right;
         text-align: right;
+        font-family: $DVM;
         font-size: 20px;
-        background: green;
+        line-height: 1.5em;
+    }
+}
+
+footer {
+    height: 200px;
+    background-color: $amarelo;
+    width: 100%;
+
+    img {
+        display: block;
+        width: 384px;
+        padding: 10px;
+        padding-top: 50px;
+        margin: 0px auto;
+    }
+
+    p {
+        color: $azul;
+        font-family: $DVL;
+        font-size: 20px;;
+        text-align: center;
     }
 }

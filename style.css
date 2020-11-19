@@ -73,11 +73,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   font-weight: normal;
 }
 
-footer {
-  background-color: #FFDFA6;
-  width: 100%;
-}
-
 #menu {
   position: fixed;
   height: 100px;
@@ -108,7 +103,7 @@ footer {
   color: #A0A1AA;
 }
 
-#menu ul li a:hover {
+#menu ul li a:hover, #menu ul li a:active {
   color: #2858A8;
 }
 
@@ -142,14 +137,14 @@ footer {
 
 #home img {
   margin-top: 80px;
-  margin-left: 100px;
+  margin-left: 120px;
   float: center;
   width: 488px;
   height: 388px;
 }
 
 #home h1 {
-  width: 600px;
+  width: 500px;
   margin-top: 200px;
   margin-right: 100px;
   color: #FFDFA6;
@@ -160,10 +155,11 @@ footer {
   float: right;
 }
 
-#home #collection {
+#home #collection img {
+  display: block;
   width: 438px;
   height: 200px;
-  margin-top: -100px;
+  margin-top: -50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -178,6 +174,9 @@ footer {
   color: #2858A8;
   margin-top: -400px;
   margin-left: 712px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: "Dotties Chocolate Extra Bold";
   font-size: 40px;
 }
 
@@ -185,6 +184,7 @@ footer {
   width: 505px;
   color: #2858A8;
   margin-left: 712px;
+  font-family: "Dotties Vanilla Medium";
   font-size: 20px;
   line-height: 30px;
 }
@@ -203,6 +203,7 @@ footer {
   color: #A0A1AA;
   float: center;
   text-align: center;
+  font-family: "Dotties Vanilla Light Italic";
   font-size: 20px;
   line-height: 30px;
 }
@@ -218,12 +219,15 @@ footer {
 
 #produtos h1 {
   color: #2858A8;
+  font-family: "Dotties Chocolate Extra Bold";
   font-size: 60px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .produto {
   margin: 40px 210px;
+  display: inline-block;
 }
 
 .produto img {
@@ -235,17 +239,39 @@ footer {
   width: 490px;
   float: right;
   text-align: right;
+  font-family: "Dotties Chocolate Medium";
   font-size: 40px;
-  background: red;
 }
 
 .produto p {
   color: #A0A1AA;
-  margin-top: 40px;
+  margin-top: -274px;
   width: 490px;
   float: right;
   text-align: right;
+  font-family: "Dotties Vanilla Medium";
   font-size: 20px;
-  background: green;
+  line-height: 1.5em;
+}
+
+footer {
+  height: 200px;
+  background-color: #FFDFA6;
+  width: 100%;
+}
+
+footer img {
+  display: block;
+  width: 384px;
+  padding: 10px;
+  padding-top: 50px;
+  margin: 0px auto;
+}
+
+footer p {
+  color: #2858A8;
+  font-family: "Dotties Vanilla Light";
+  font-size: 20px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
