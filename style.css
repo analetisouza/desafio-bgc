@@ -53,6 +53,11 @@
   font-style: normal;
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -78,6 +83,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   height: 100px;
   width: 100%;
   background-color: #FFFFFF;
+  z-index: 3;
 }
 
 #menu ul {
@@ -86,13 +92,13 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 }
 
 #menu ul li {
-  color: #A0A1AA;
   display: inline-block;
   margin-right: 30px;
   font-size: 24px;
 }
 
 #menu ul li a {
+  color: #A0A1AA;
   background-color: #FFFFFF;
   font-family: "Dotties Vanilla Regular";
   text-decoration: none;
@@ -222,16 +228,18 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   font-family: "Dotties Chocolate Extra Bold";
   font-size: 60px;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .produto {
-  margin: 40px 210px;
+  margin: 0px 200px;
+  margin-bottom: 100px;
   display: inline-block;
 }
 
 .produto img {
   position: static;
+  z-index: 1;
 }
 
 .produto h2 {
@@ -245,13 +253,113 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 .produto p {
   color: #A0A1AA;
-  margin-top: -274px;
-  width: 490px;
+  margin-top: -280px;
+  width: 460px;
   float: right;
   text-align: right;
   font-family: "Dotties Vanilla Medium";
   font-size: 20px;
   line-height: 1.5em;
+}
+
+.produto .preco {
+  width: 200px;
+  height: 190px;
+  position: absolute;
+  z-index: 2;
+  left: 484px;
+  margin-top: 240px;
+  background-image: url(/images/estrela-amarela.svg);
+}
+
+.produto .preco h3 {
+  color: #2858A8;
+  font-family: "Dotties Chocolate Extra Bold";
+  font-size: 60px;
+  margin-left: 60px;
+  margin-top: 70px;
+}
+
+.produto .preco p {
+  color: #2858A8;
+  font-family: "Dotties Chocolate Extra Bold";
+  font-size: 20px;
+  margin-right: 70px;
+  margin-top: -10px;
+}
+
+#reserva {
+  height: 980px;
+  padding: 50px 0px;
+  background-color: #2858A8;
+}
+
+#reserva h1 {
+  color: #FFFFFF;
+  font-family: "Dotties Chocolate Extra Bold";
+  font-size: 60px;
+  text-align: center;
+  padding: 50px;
+}
+
+#reserva form {
+  margin: 0px 200px;
+}
+
+#reserva form label {
+  color: #FFFFFF;
+  font-family: "Dotties Chocolate Extra Bold";
+  font-size: 30px;
+}
+
+#reserva form label[for="sim"], #reserva form label[for="nao"] {
+  font-family: "Dotties Chocolate Regular";
+  padding-right: 80px;
+}
+
+#reserva form input, #reserva form select {
+  height: 40px;
+  width: 100%;
+  color: #A0A1AA;
+  font-family: "Dotties Vanilla Medium";
+  font-size: 20px;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  border: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 0px 20px;
+}
+
+#reserva form input:focus, #reserva form select:focus {
+  outline: none;
+}
+
+#reserva form input[type=radio], #reserva form select[type=radio] {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+
+#reserva form input[type=submit], #reserva form select[type=submit] {
+  display: block;
+  width: 182px;
+  height: 60px;
+  color: #2858A8;
+  background-color: #FFDFA6;
+  font-family: "Dotties Chocolate Extra Bold";
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 0px;
+}
+
+#reserva form input[type=submit]:hover, #reserva form select[type=submit]:hover {
+  background-color: #ffd07c;
+}
+
+#reserva form input[type=submit]:focus, #reserva form select[type=submit]:focus {
+  outline: none;
 }
 
 footer {

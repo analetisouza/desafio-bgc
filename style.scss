@@ -68,6 +68,12 @@ $DVM : "Dotties Vanilla Medium";
     font-style: normal;
 }
 
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+
 a {
 	text-decoration: none;
 }
@@ -93,18 +99,19 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     height: 100px;
     width: 100%;
     background-color: $branco;
+    z-index: 3;
 
     ul {
         margin-top: 40px;
         margin-left: 100px;
 
         li {
-        color: $cinza;
         display: inline-block;
         margin-right: 30px;
         font-size: 24px;
 
             a {
+                color: $cinza;
                 background-color: $branco;
                 font-family: $DVR;
                 text-decoration: none;
@@ -133,16 +140,16 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             text-transform: uppercase;
             padding: 0px 27px;
             padding-top: 5px;
-            background: #2858A8;
-            border: 10px solid #2858A8;
+            background: $azul;
+            border: 10px solid $azul;
             border-radius: 5px;
 
             &:visited {
                 color: $branco;
             }
             &:hover {
-                background: scale-color(#2858A8, $lightness: 20%);
-                border: 10px solid scale-color(#2858A8, $lightness: 20%);
+                background: scale-color($azul, $lightness: 20%);
+                border: 10px solid scale-color($azul, $lightness: 20%);
             }
         }
     }
@@ -240,17 +247,19 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         font-family: $DCEB;
         font-size: 60px;
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
 }
 
 .produto {
 
-    margin: 40px 210px;
+    margin: 0px 200px;
+    margin-bottom: 100px;
     display: inline-block;
 
     img {
         position: static;
+        z-index: 1;
     }
 
     h2 {
@@ -264,13 +273,113 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     
     p {
         color: $cinza;
-        margin-top: -274px;
-        width: 490px;
+        margin-top: -280px;
+        width: 460px;
         float: right;
         text-align: right;
         font-family: $DVM;
         font-size: 20px;
         line-height: 1.5em;
+    }
+
+    .preco {
+        width: 200px;
+        height: 190px;
+        position: absolute;
+        z-index: 2;
+        left: 484px;
+        margin-top: 240px;
+        background-image: url(/images/estrela-amarela.svg);
+
+        h3 {
+            color: $azul;
+            font-family: $DCEB;
+            font-size: 60px;
+            margin-left: 60px;
+            margin-top: 70px;
+        }
+
+        p {
+            color: $azul;
+            font-family: $DCEB;
+            font-size: 20px;
+            margin-right: 70px;
+            margin-top: -10px;
+        }
+    }
+}
+
+#reserva {
+    height: 980px;
+    padding: 50px 0px;
+    background-color: $azul;
+
+    h1 {
+        color: $branco;
+        font-family: $DCEB;
+        font-size: 60px;
+        text-align: center;
+        padding: 50px;
+    }
+    form {
+        margin: 0px 200px;
+
+        label {
+            color: $branco;
+            font-family: $DCEB;
+            font-size: 30px;
+
+            &[for="sim"], &[for="nao"]{
+                font-family: $DCR;
+                padding-right: 80px;
+            }
+        }
+
+        input, select {
+            height: 40px;
+            width: 100%;
+            color: $cinza;
+            font-family: $DVM;
+            font-size: 20px;
+            background-color: $branco;
+            border-color: $branco;
+            border: 5px;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding: 0px 20px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &[type=radio] {
+                height: 20px;
+                width: 20px;
+                margin-right: 20px;
+            }
+
+            &[type=submit]{
+                display: block;
+                width: 182px;
+                height: 60px;
+                color: $azul;
+                background-color: $amarelo;
+                font-family: $DCEB;
+                font-size: 30px;
+                margin: 20px auto;
+                padding: 0px;
+
+                &:hover {
+                    background-color: scale-color($amarelo, $lightness: -10%);
+                }
+
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
     }
 }
 
@@ -290,7 +399,7 @@ footer {
     p {
         color: $azul;
         font-family: $DVL;
-        font-size: 20px;;
+        font-size: 20px;
         text-align: center;
     }
 }
