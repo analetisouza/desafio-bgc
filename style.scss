@@ -96,23 +96,22 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #menu {
     position: fixed;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: $branco;
     z-index: 3;
 
     ul {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-left: 100px;
 
         li {
         display: inline-block;
         margin-right: 30px;
-        font-size: 24px;
+        font-size: 20px;
 
             a {
                 color: $cinza;
-                background-color: $branco;
                 font-family: $DVR;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -129,9 +128,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
     #botao-reserva {
         float: right;
-        margin-right: 100px;
-        font-size: 24px;
-        margin-top: -30px;
+        margin-right: 110px;
+        font-size: 20px;
+        margin-top: -24px;
 
         a {
             color: $branco;
@@ -139,9 +138,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             text-decoration: none;
             text-transform: uppercase;
             padding: 0px 27px;
-            padding-top: 5px;
+            padding-top: 4px;
             background: $azul;
-            border: 10px solid $azul;
+            border: 7px solid $azul;
             border-radius: 5px;
 
             &:visited {
@@ -149,7 +148,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             }
             &:hover {
                 background: scale-color($azul, $lightness: 20%);
-                border: 10px solid scale-color($azul, $lightness: 20%);
+                border: 7px solid scale-color($azul, $lightness: 20%);
             }
         }
     }
@@ -160,17 +159,17 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         margin-top: 80px;
         margin-left: 120px;
         float: center;
-        width: 488px;
-        height: 388px;
+        width: 439px;
+        height: 349px;
     }
 
     h1 {
-        width: 500px;
+        width: 460px;
         margin-top: 200px;
         margin-right: 100px;
         color: $amarelo;
         font-family: $DCEBI;
-        font-size: 50px;
+        font-size: 48px;
         line-height: 1.1em;
         text-align: center;
         float: right;
@@ -190,34 +189,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #sobre {
 
-    img {
-        margin-bottom: -30px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h2 {
-        color: $azul;
-        margin-top: -400px;
-        margin-left: 712px;
-        padding-top: 50px;
-        padding-bottom: 30px;
-        font-family: $DCEB;
-        font-size: 40px;
-    }
-    ul {
-        width: 505px;
-        color: $azul;
-        margin-left: 712px;
-        font-family: $DVM;
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    li {
-        margin-bottom: 17px;
-    }
-
     p {
         width: 788px;
         margin-left: auto;
@@ -230,10 +201,40 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         text-align: center;
         font-family: $DVLI;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 1.5em;
     }
+
+    img {
+        margin-bottom: -30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        color: $azul;
+        margin-top: -400px;
+        margin-left: 712px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-family: $DCEB;
+        font-size: 36px;
+    }
+    ul {
+        width: 440px;
+        color: $azul;
+        margin-left: 712px;
+        font-family: $DVM;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+    li {
+        margin-bottom: 17px;
+    }
+
     #diferenciais {
         height: 400px;
+        width: 100%;
         background-color: $amarelo;
     }
 
@@ -241,11 +242,14 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #produtos {
 
+    margin: 0px auto;
     margin-top: 100px;
+    max-width: 960px;
+
     h1 {
         color: $azul;
         font-family: $DCEB;
-        font-size: 60px;
+        font-size: 48px;
         text-align: center;
         padding-bottom: 60px;
     }
@@ -253,29 +257,31 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 .produto {
 
-    margin: 0px 200px;
     margin-bottom: 100px;
-    display: inline-block;
+    display: block;
 
     img {
+        height: 346px;
+        width: 346px;
         position: static;
         z-index: 1;
     }
 
     h2 {
         color: $azul;
-        width: 490px;
+        max-width: 550px;
         float: right;
         text-align: right;
         font-family: $DCM;
-        font-size: 40px;
+        font-size: 32px;
+        padding-bottom: 32px;
     }
     
     p {
         color: $cinza;
-        margin-top: -280px;
-        width: 460px;
+        max-width: 520px;
         float: right;
+        margin-top: -260px;
         text-align: right;
         font-family: $DVM;
         font-size: 20px;
@@ -283,41 +289,49 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
     }
 
     .preco {
-        width: 200px;
-        height: 190px;
+        width: 160px;
+        height: 152px;
         position: absolute;
         z-index: 2;
-        left: 484px;
-        margin-top: 240px;
-        background-image: url(/images/estrela-amarela.svg);
+        margin-left: -24px;
+        margin-top: 30px;
+  
+        img {
+            margin-top: 200px;
+            margin-left: -56px;
+            width: 160px;
+            height: 152px;
+        }
 
         h3 {
+            position: absolute;
             color: $azul;
             font-family: $DCEB;
-            font-size: 60px;
-            margin-left: 60px;
-            margin-top: 70px;
+            font-size: 48px;
+            margin-left: -5px;
+            margin-top: 260px;
         }
 
         p {
+            position: absolute;
             color: $azul;
             font-family: $DCEB;
-            font-size: 20px;
-            margin-right: 70px;
-            margin-top: -10px;
+            font-size: 16px;
+            margin-left: 2px;
+            margin-top: 300px;
         }
     }
 }
 
 #reserva {
-    height: 980px;
+    height: 940px;
     padding: 50px 0px;
     background-color: $azul;
 
     h1 {
         color: $branco;
         font-family: $DCEB;
-        font-size: 60px;
+        font-size: 48px;
         text-align: center;
         padding: 50px;
     }
@@ -327,7 +341,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         label {
             color: $branco;
             font-family: $DCEB;
-            font-size: 30px;
+            font-size: 24px;
 
             &[for="sim"], &[for="nao"]{
                 font-family: $DCR;
@@ -340,7 +354,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             width: 100%;
             color: $cinza;
             font-family: $DVM;
-            font-size: 20px;
+            font-size: 16px;
             background-color: $branco;
             border-color: $branco;
             border: 5px;
@@ -366,9 +380,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
                 color: $azul;
                 background-color: $amarelo;
                 font-family: $DCEB;
-                font-size: 30px;
+                font-size: 24px;
                 margin: 20px auto;
-                padding: 0px;
+                padding-top: 5px;
 
                 &:hover {
                     background-color: scale-color($amarelo, $lightness: -10%);
@@ -399,7 +413,45 @@ footer {
     p {
         color: $azul;
         font-family: $DVL;
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+
+    #home {
+        img {
+            margin-left: 60px;
+        }
+
+        h1 {
+            margin-right: 40px;
+        }
+    }
+
+    #sobre {
+        img {
+            margin-bottom: 10px;
+            width: 526px;
+            height: 405px;
+        }
+
+        h2{
+            float: right;
+            padding: 20px 0px;
+            margin-right: 205px;
+            margin-left: auto;
+            margin-top: 0px;
+        }
+        ul {
+            margin-left: auto;
+            margin-right: 20px;
+        }
+
+        #diferenciais {
+            margin-top: -400px;
+            height: 365px;
+        }
     }
 }

@@ -80,26 +80,25 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #menu {
   position: fixed;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: #FFFFFF;
   z-index: 3;
 }
 
 #menu ul {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 100px;
 }
 
 #menu ul li {
   display: inline-block;
   margin-right: 30px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #menu ul li a {
   color: #A0A1AA;
-  background-color: #FFFFFF;
   font-family: "Dotties Vanilla Regular";
   text-decoration: none;
   text-transform: uppercase;
@@ -115,9 +114,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #menu #botao-reserva {
   float: right;
-  margin-right: 100px;
-  font-size: 24px;
-  margin-top: -30px;
+  margin-right: 110px;
+  font-size: 20px;
+  margin-top: -24px;
 }
 
 #menu #botao-reserva a {
@@ -126,9 +125,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0px 27px;
-  padding-top: 5px;
+  padding-top: 4px;
   background: #2858A8;
-  border: 10px solid #2858A8;
+  border: 7px solid #2858A8;
   border-radius: 5px;
 }
 
@@ -138,24 +137,24 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 #menu #botao-reserva a:hover {
   background: #3c74d1;
-  border: 10px solid #3c74d1;
+  border: 7px solid #3c74d1;
 }
 
 #home img {
   margin-top: 80px;
   margin-left: 120px;
   float: center;
-  width: 488px;
-  height: 388px;
+  width: 439px;
+  height: 349px;
 }
 
 #home h1 {
-  width: 500px;
+  width: 460px;
   margin-top: 200px;
   margin-right: 100px;
   color: #FFDFA6;
   font-family: "Dotties Chocolate Extra Bold Italic";
-  font-size: 50px;
+  font-size: 48px;
   line-height: 1.1em;
   text-align: center;
   float: right;
@@ -170,35 +169,6 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   margin-right: auto;
 }
 
-#sobre img {
-  margin-bottom: -30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#sobre h2 {
-  color: #2858A8;
-  margin-top: -400px;
-  margin-left: 712px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  font-family: "Dotties Chocolate Extra Bold";
-  font-size: 40px;
-}
-
-#sobre ul {
-  width: 505px;
-  color: #2858A8;
-  margin-left: 712px;
-  font-family: "Dotties Vanilla Medium";
-  font-size: 20px;
-  line-height: 30px;
-}
-
-#sobre li {
-  margin-bottom: 17px;
-}
-
 #sobre p {
   width: 788px;
   margin-left: auto;
@@ -211,51 +181,85 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   text-align: center;
   font-family: "Dotties Vanilla Light Italic";
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5em;
+}
+
+#sobre img {
+  margin-bottom: -30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sobre h2 {
+  color: #2858A8;
+  margin-top: -400px;
+  margin-left: 712px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-family: "Dotties Chocolate Extra Bold";
+  font-size: 36px;
+}
+
+#sobre ul {
+  width: 440px;
+  color: #2858A8;
+  margin-left: 712px;
+  font-family: "Dotties Vanilla Medium";
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+#sobre li {
+  margin-bottom: 17px;
 }
 
 #sobre #diferenciais {
   height: 400px;
+  width: 100%;
   background-color: #FFDFA6;
 }
 
 #produtos {
+  margin: 0px auto;
   margin-top: 100px;
+  max-width: 960px;
 }
 
 #produtos h1 {
   color: #2858A8;
   font-family: "Dotties Chocolate Extra Bold";
-  font-size: 60px;
+  font-size: 48px;
   text-align: center;
   padding-bottom: 60px;
 }
 
 .produto {
-  margin: 0px 200px;
   margin-bottom: 100px;
-  display: inline-block;
+  display: block;
 }
 
 .produto img {
+  height: 346px;
+  width: 346px;
   position: static;
   z-index: 1;
 }
 
 .produto h2 {
   color: #2858A8;
-  width: 490px;
+  max-width: 550px;
   float: right;
   text-align: right;
   font-family: "Dotties Chocolate Medium";
-  font-size: 40px;
+  font-size: 32px;
+  padding-bottom: 32px;
 }
 
 .produto p {
   color: #A0A1AA;
-  margin-top: -280px;
-  width: 460px;
+  max-width: 520px;
   float: right;
+  margin-top: -260px;
   text-align: right;
   font-family: "Dotties Vanilla Medium";
   font-size: 20px;
@@ -263,33 +267,41 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 }
 
 .produto .preco {
-  width: 200px;
-  height: 190px;
+  width: 160px;
+  height: 152px;
   position: absolute;
   z-index: 2;
-  left: 484px;
-  margin-top: 240px;
-  background-image: url(/images/estrela-amarela.svg);
+  margin-left: -24px;
+  margin-top: 30px;
+}
+
+.produto .preco img {
+  margin-top: 200px;
+  margin-left: -56px;
+  width: 160px;
+  height: 152px;
 }
 
 .produto .preco h3 {
+  position: absolute;
   color: #2858A8;
   font-family: "Dotties Chocolate Extra Bold";
-  font-size: 60px;
-  margin-left: 60px;
-  margin-top: 70px;
+  font-size: 48px;
+  margin-left: -5px;
+  margin-top: 260px;
 }
 
 .produto .preco p {
+  position: absolute;
   color: #2858A8;
   font-family: "Dotties Chocolate Extra Bold";
-  font-size: 20px;
-  margin-right: 70px;
-  margin-top: -10px;
+  font-size: 16px;
+  margin-left: 2px;
+  margin-top: 300px;
 }
 
 #reserva {
-  height: 980px;
+  height: 940px;
   padding: 50px 0px;
   background-color: #2858A8;
 }
@@ -297,7 +309,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 #reserva h1 {
   color: #FFFFFF;
   font-family: "Dotties Chocolate Extra Bold";
-  font-size: 60px;
+  font-size: 48px;
   text-align: center;
   padding: 50px;
 }
@@ -309,7 +321,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 #reserva form label {
   color: #FFFFFF;
   font-family: "Dotties Chocolate Extra Bold";
-  font-size: 30px;
+  font-size: 24px;
 }
 
 #reserva form label[for="sim"], #reserva form label[for="nao"] {
@@ -322,7 +334,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   width: 100%;
   color: #A0A1AA;
   font-family: "Dotties Vanilla Medium";
-  font-size: 20px;
+  font-size: 16px;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   border: 5px;
@@ -349,9 +361,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   color: #2858A8;
   background-color: #FFDFA6;
   font-family: "Dotties Chocolate Extra Bold";
-  font-size: 30px;
+  font-size: 24px;
   margin: 20px auto;
-  padding: 0px;
+  padding-top: 5px;
 }
 
 #reserva form input[type=submit]:hover, #reserva form select[type=submit]:hover {
@@ -379,7 +391,36 @@ footer img {
 footer p {
   color: #2858A8;
   font-family: "Dotties Vanilla Light";
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  #home img {
+    margin-left: 60px;
+  }
+  #home h1 {
+    margin-right: 40px;
+  }
+  #sobre img {
+    margin-bottom: 10px;
+    width: 526px;
+    height: 405px;
+  }
+  #sobre h2 {
+    float: right;
+    padding: 20px 0px;
+    margin-right: 205px;
+    margin-left: auto;
+    margin-top: 0px;
+  }
+  #sobre ul {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  #sobre #diferenciais {
+    margin-top: -400px;
+    height: 365px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
