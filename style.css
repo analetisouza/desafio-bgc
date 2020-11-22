@@ -190,7 +190,13 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   margin-right: auto;
 }
 
-#sobre h2 {
+#sobre #diferenciais {
+  height: 400px;
+  width: 100%;
+  background-color: #FFDFA6;
+}
+
+#sobre #diferenciais h2 {
   color: #2858A8;
   margin-top: -400px;
   margin-left: 712px;
@@ -200,7 +206,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   font-size: 36px;
 }
 
-#sobre ul {
+#sobre #diferenciais ul {
   width: 440px;
   color: #2858A8;
   margin-left: 712px;
@@ -209,14 +215,8 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   line-height: 1.5em;
 }
 
-#sobre li {
+#sobre #diferenciais li {
   margin-bottom: 17px;
-}
-
-#sobre #diferenciais {
-  height: 400px;
-  width: 100%;
-  background-color: #FFDFA6;
 }
 
 #produtos {
@@ -233,40 +233,19 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   padding-bottom: 60px;
 }
 
-.produto {
+#produtos .produto .imagem {
   margin-bottom: 100px;
   display: block;
 }
 
-.produto img {
+#produtos .produto .imagem img {
   height: 346px;
   width: 346px;
   position: static;
   z-index: 1;
 }
 
-.produto h2 {
-  color: #2858A8;
-  max-width: 550px;
-  float: right;
-  text-align: right;
-  font-family: "Dotties Chocolate Medium";
-  font-size: 32px;
-  padding-bottom: 32px;
-}
-
-.produto p {
-  color: #A0A1AA;
-  max-width: 520px;
-  float: right;
-  margin-top: -260px;
-  text-align: right;
-  font-family: "Dotties Vanilla Medium";
-  font-size: 20px;
-  line-height: 1.5em;
-}
-
-.produto .preco {
+#produtos .produto .imagem .preco {
   width: 160px;
   height: 152px;
   position: absolute;
@@ -275,14 +254,14 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   margin-top: 30px;
 }
 
-.produto .preco img {
+#produtos .produto .imagem .preco img {
   margin-top: 200px;
   margin-left: -56px;
   width: 160px;
   height: 152px;
 }
 
-.produto .preco h3 {
+#produtos .produto .imagem .preco h3 {
   position: absolute;
   color: #2858A8;
   font-family: "Dotties Chocolate Extra Bold";
@@ -291,13 +270,35 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   margin-top: 260px;
 }
 
-.produto .preco p {
+#produtos .produto .imagem .preco p {
   position: absolute;
   color: #2858A8;
   font-family: "Dotties Chocolate Extra Bold";
   font-size: 16px;
   margin-left: 2px;
   margin-top: 300px;
+}
+
+#produtos .produto .descricao h2 {
+  color: #2858A8;
+  max-width: 550px;
+  float: right;
+  margin-top: -450px;
+  text-align: right;
+  font-family: "Dotties Chocolate Medium";
+  font-size: 32px;
+  padding-bottom: 32px;
+}
+
+#produtos .produto .descricao p {
+  color: #A0A1AA;
+  max-width: 520px;
+  float: right;
+  margin-top: -380px;
+  text-align: right;
+  font-family: "Dotties Vanilla Medium";
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
 #reserva {
@@ -322,6 +323,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   color: #FFFFFF;
   font-family: "Dotties Chocolate Extra Bold";
   font-size: 24px;
+  line-height: 1.5em;
 }
 
 #reserva form label[for="sim"], #reserva form label[for="nao"] {
@@ -339,7 +341,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   border-color: #FFFFFF;
   border: 5px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
   padding: 0px 20px;
 }
@@ -395,7 +397,7 @@ footer p {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
+@media screen and (max-width: 1200px) {
   #home img {
     margin-left: 60px;
   }
@@ -407,20 +409,140 @@ footer p {
     width: 526px;
     height: 405px;
   }
-  #sobre h2 {
+  #sobre #diferenciais {
+    margin-top: -400px;
+    height: 365px;
+  }
+  #sobre #diferenciais h2 {
     float: right;
     padding: 20px 0px;
     margin-right: 205px;
     margin-left: auto;
     margin-top: 0px;
   }
-  #sobre ul {
+  #sobre #diferenciais ul {
     margin-left: auto;
     margin-right: 20px;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  #menu {
+    height: 80px;
+  }
+  #menu ul li {
+    display: none;
+  }
+  #menu #botao-reserva {
+    margin-right: 40px;
+    margin-top: 0px;
+  }
+  #home img {
+    margin: 0px auto;
+    margin-top: 60px;
+    float: center;
+    padding: 0px 60px;
+    width: 100%;
+  }
+  #home h1 {
+    margin: 0px auto;
+    margin-top: 40px;
+    float: center;
+    padding: 0px 60px;
+    width: 100%;
+  }
+  #sobre {
+    display: block;
+  }
+  #sobre p {
+    width: 100%;
+    padding: 0px 40px;
+  }
+  #sobre img {
+    width: 100%;
+    height: auto;
+  }
   #sobre #diferenciais {
-    margin-top: -400px;
-    height: 365px;
+    display: -ms-grid;
+    display: grid;
+    background-color: #FFDFA6;
+    margin-top: -15px;
+    margin-bottom: 60px;
+  }
+  #sobre #diferenciais h2 {
+    position: absolute;
+    float: center;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: #FFDFA6;
+  }
+  #sobre #diferenciais ul {
+    display: block;
+    position: absolute;
+    float: center;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 100px;
+    background-color: #FFDFA6;
+  }
+  #produtos {
+    text-align: center;
+    margin: 0px auto;
+    display: block;
+    width: 100%;
+  }
+  #produtos h1 {
+    display: block;
+  }
+  #produtos .produto {
+    padding: 0px 60px;
+    margin: 0px auto;
+    min-width: 360px;
+  }
+  #produtos .produto .imagem {
+    width: 100%;
+    height: auto;
+    float: center;
+  }
+  #produtos .produto .imagem .preco {
+    margin-top: 68px;
+    margin-left: -220px;
+  }
+  #produtos .produto .imagem .preco h3 {
+    margin-left: 22px;
+  }
+  #produtos .produto .imagem .preco p {
+    margin-left: 29px;
+  }
+  #produtos .produto .descricao {
+    display: -ms-grid;
+    display: grid;
+    margin-top: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #produtos .produto .descricao h2 {
+    text-align: center;
+    float: center;
+    margin: 0px auto;
+  }
+  #produtos .produto .descricao p {
+    max-width: 600px;
+    text-align: center;
+    float: center;
+    margin: 0px auto;
+    padding-bottom: 60px;
+  }
+  #reserva {
+    height: 100%;
+  }
+  #reserva form {
+    margin: 0px 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

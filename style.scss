@@ -210,32 +210,32 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         margin-right: auto;
     }
 
-    h2 {
-        color: $azul;
-        margin-top: -400px;
-        margin-left: 712px;
-        padding-top: 40px;
-        padding-bottom: 30px;
-        font-family: $DCEB;
-        font-size: 36px;
-    }
-    ul {
-        width: 440px;
-        color: $azul;
-        margin-left: 712px;
-        font-family: $DVM;
-        font-size: 20px;
-        line-height: 1.5em;
-    }
-
-    li {
-        margin-bottom: 17px;
-    }
-
     #diferenciais {
         height: 400px;
         width: 100%;
         background-color: $amarelo;
+
+        h2 {
+            color: $azul;
+            margin-top: -400px;
+            margin-left: 712px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-family: $DCEB;
+            font-size: 36px;
+        }
+        ul {
+            width: 440px;
+            color: $azul;
+            margin-left: 712px;
+            font-family: $DVM;
+            font-size: 20px;
+            line-height: 1.5em;
+        }
+
+        li {
+            margin-bottom: 17px;
+        }
     }
 
 }
@@ -253,72 +253,78 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
         text-align: center;
         padding-bottom: 60px;
     }
-}
+    .produto {
 
-.produto {
+        .imagem {
 
-    margin-bottom: 100px;
-    display: block;
+            margin-bottom: 100px;
+            display: block;
+        
+            img {
+                height: 346px;
+                width: 346px;
+                position: static;
+                z-index: 1;
+            }
 
-    img {
-        height: 346px;
-        width: 346px;
-        position: static;
-        z-index: 1;
-    }
-
-    h2 {
-        color: $azul;
-        max-width: 550px;
-        float: right;
-        text-align: right;
-        font-family: $DCM;
-        font-size: 32px;
-        padding-bottom: 32px;
-    }
-    
-    p {
-        color: $cinza;
-        max-width: 520px;
-        float: right;
-        margin-top: -260px;
-        text-align: right;
-        font-family: $DVM;
-        font-size: 20px;
-        line-height: 1.5em;
-    }
-
-    .preco {
-        width: 160px;
-        height: 152px;
-        position: absolute;
-        z-index: 2;
-        margin-left: -24px;
-        margin-top: 30px;
-  
-        img {
-            margin-top: 200px;
-            margin-left: -56px;
-            width: 160px;
-            height: 152px;
+            .preco {
+                width: 160px;
+                height: 152px;
+                position: absolute;
+                z-index: 2;
+                margin-left: -24px;
+                margin-top: 30px;
+        
+                img {
+                    margin-top: 200px;
+                    margin-left: -56px;
+                    width: 160px;
+                    height: 152px;
+                }
+        
+                h3 {
+                    position: absolute;
+                    color: $azul;
+                    font-family: $DCEB;
+                    font-size: 48px;
+                    margin-left: -5px;
+                    margin-top: 260px;
+                }
+        
+                p {
+                    position: absolute;
+                    color: $azul;
+                    font-family: $DCEB;
+                    font-size: 16px;
+                    margin-left: 2px;
+                    margin-top: 300px;
+                }
+            }
         }
 
-        h3 {
-            position: absolute;
-            color: $azul;
-            font-family: $DCEB;
-            font-size: 48px;
-            margin-left: -5px;
-            margin-top: 260px;
-        }
-
-        p {
-            position: absolute;
-            color: $azul;
-            font-family: $DCEB;
-            font-size: 16px;
-            margin-left: 2px;
-            margin-top: 300px;
+        .descricao {
+                    
+            h2 {
+                color: $azul;
+                max-width: 550px;
+                float: right;
+                margin-top: -450px;
+                text-align: right;
+                font-family: $DCM;
+                font-size: 32px;
+                padding-bottom: 32px;
+            }
+            
+            p {
+                color: $cinza;
+                max-width: 520px;
+                float: right;
+                margin-top: -380px;
+                text-align: right;
+                font-family: $DVM;
+                font-size: 20px;
+                line-height: 1.5em;
+            }
         }
     }
 }
@@ -342,6 +348,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             color: $branco;
             font-family: $DCEB;
             font-size: 24px;
+            line-height: 1.5em;
 
             &[for="sim"], &[for="nao"]{
                 font-family: $DCR;
@@ -359,7 +366,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             border-color: $branco;
             border: 5px;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-top: 10px;
             margin-bottom: 40px;
             padding: 0px 20px;
 
@@ -418,7 +425,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) and (min-width: 1024px) {
+@media screen and (max-width: 1200px){
 
     #home {
         img {
@@ -437,21 +444,166 @@ footer {
             height: 405px;
         }
 
-        h2{
-            float: right;
-            padding: 20px 0px;
-            margin-right: 205px;
-            margin-left: auto;
-            margin-top: 0px;
-        }
-        ul {
-            margin-left: auto;
-            margin-right: 20px;
-        }
-
         #diferenciais {
             margin-top: -400px;
             height: 365px;
+
+
+            h2{
+                float: right;
+                padding: 20px 0px;
+                margin-right: 205px;
+                margin-left: auto;
+                margin-top: 0px;
+            }
+            ul {
+                margin-left: auto;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #menu {
+        height: 80px; 
+
+        ul li {
+            display: none;
+        }  
+        
+        #botao-reserva {
+            margin-right: 40px;
+            margin-top: 0px;
+        }
+    }
+
+    #home {
+        img {
+            margin: 0px auto;
+            margin-top: 60px;
+            float: center;
+            padding: 0px 60px;
+            width: 100%;
+        }
+        h1 {
+            margin: 0px auto;
+            margin-top: 40px;
+            float: center;
+            padding: 0px 60px;
+            width: 100%;
+        }
+    }
+
+    #sobre {
+        
+        display: block;
+
+        p {
+            width: 100%;
+            padding: 0px 40px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        #diferenciais {
+            display: grid;
+            background-color: $amarelo;
+            margin-top: -15px;
+            margin-bottom: 60px;
+
+            h2 {
+                position: absolute;
+                float: center;
+                text-align: center;
+                padding: 40px;
+                width: 100%;
+                margin: 0px auto;
+                background-color: $amarelo;
+            }
+
+            ul {
+                display: block;
+                position: absolute;
+                float: center;
+                text-align: center;
+                padding: 40px;
+                width: 100%;
+                margin: 0px auto;
+                margin-top: 100px;
+                background-color: $amarelo;
+            }
+        }
+    }
+
+    #produtos {
+
+        text-align: center;
+        margin: 0px auto;
+        display: block;
+        width: 100%;
+
+        h1 {
+            display: block;
+        }
+
+        .produto {
+
+            padding: 0px 60px;
+            margin: 0px auto;
+            min-width: 360px;
+
+            .imagem {
+
+                width: 100%;
+                height: auto;
+                float: center;
+
+                .preco {
+                        margin-top: 68px;
+                        margin-left: -220px;
+
+                        h3 {
+                            margin-left: 22px;
+                        }
+
+                        p {
+                            margin-left: 29px;
+                        }
+                }
+            }
+
+            .descricao {
+
+                display: grid;
+                margin-top: 100px;
+                justify-content: center;
+
+                h2 {
+                    text-align: center;
+                    float: center;
+                    margin: 0px auto;
+                }
+
+                p {
+                    max-width: 600px;
+                    text-align: center;
+                    float: center;
+                    margin: 0px auto;
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+
+    #reserva {
+        height: 100%;
+        form {
+            margin: 0px 40px;
         }
     }
 }
