@@ -428,18 +428,26 @@ footer p {
 
 @media screen and (max-width: 1024px) {
   #menu {
-    height: 80px;
+    height: 120px;
   }
   #menu ul li {
     display: none;
   }
   #menu #botao-reserva {
-    margin-right: 40px;
-    margin-top: 0px;
+    margin-right: 80px;
+    margin-top: 6px;
+    font-size: 40px;
+  }
+  #menu #botao-reserva a {
+    padding-top: 3px;
+    border: 10px solid #2858A8;
+  }
+  #menu #botao-reserva a:hover {
+    border: 10px solid #3c74d1;
   }
   #home img {
     margin: 0px auto;
-    margin-top: 60px;
+    margin-top: 120px;
     float: center;
     padding: 0px 60px;
     width: 100%;
@@ -456,7 +464,7 @@ footer p {
   }
   #sobre p {
     width: 100%;
-    padding: 0px 40px;
+    padding: 0px 80px;
   }
   #sobre img {
     width: 100%;
@@ -466,16 +474,19 @@ footer p {
     display: -ms-grid;
     display: grid;
     background-color: #FFDFA6;
-    margin-top: -15px;
-    margin-bottom: 60px;
+    margin-top: -25px;
+    margin-bottom: 620px;
   }
   #sobre #diferenciais h2 {
     position: absolute;
     float: center;
     text-align: center;
+    font-size: 50px;
+    line-height: 1.25em;
     padding: 40px;
     width: 100%;
     margin: 0px auto;
+    margin-top: 40px;
     background-color: #FFDFA6;
   }
   #sobre #diferenciais ul {
@@ -483,15 +494,17 @@ footer p {
     position: absolute;
     float: center;
     text-align: center;
-    padding: 40px;
+    font-size: 40px;
+    padding: 80px;
     width: 100%;
     margin: 0px auto;
-    margin-top: 100px;
+    margin-top: 200px;
     background-color: #FFDFA6;
   }
   #produtos {
     text-align: center;
     margin: 0px auto;
+    margin-bottom: 40px;
     display: block;
     width: 100%;
   }
@@ -499,24 +512,41 @@ footer p {
     display: block;
   }
   #produtos .produto {
+    min-width: 300px;
     padding: 0px 60px;
     margin: 0px auto;
-    min-width: 360px;
+    width: 100%;
   }
   #produtos .produto .imagem {
     width: 100%;
     height: auto;
     float: center;
   }
+  #produtos .produto .imagem img {
+    height: 60%;
+    width: 60%;
+  }
   #produtos .produto .imagem .preco {
-    margin-top: 68px;
-    margin-left: -220px;
+    width: 200px;
+    height: 195px;
+    margin-top: 160px;
+    margin-left: -72px;
+  }
+  #produtos .produto .imagem .preco img {
+    width: 200px;
+    height: 195px;
   }
   #produtos .produto .imagem .preco h3 {
+    font-size: 60px;
     margin-left: 22px;
+    margin-left: 30px;
+    margin-top: 270px;
   }
   #produtos .produto .imagem .preco p {
+    font-size: 24px;
     margin-left: 29px;
+    margin-left: 37px;
+    margin-top: 330px;
   }
   #produtos .produto .descricao {
     display: -ms-grid;
@@ -532,17 +562,30 @@ footer p {
     margin: 0px auto;
   }
   #produtos .produto .descricao p {
-    max-width: 600px;
+    max-width: none;
+    width: 100%;
     text-align: center;
+    font-size: 14px;
     float: center;
     margin: 0px auto;
+    padding: 0px 40px;
     padding-bottom: 60px;
   }
   #reserva {
     height: 100%;
   }
+  #reserva h1 {
+    font-size: 60px;
+  }
   #reserva form {
-    margin: 0px 40px;
+    margin: 0px 80px;
+  }
+  #reserva form label {
+    font-size: 40px;
+  }
+  #reserva form input, #reserva form select {
+    height: 60px;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

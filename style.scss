@@ -467,22 +467,32 @@ footer {
 @media screen and (max-width: 1024px) {
 
     #menu {
-        height: 80px; 
+        height: 120px; 
 
         ul li {
             display: none;
         }  
         
         #botao-reserva {
-            margin-right: 40px;
-            margin-top: 0px;
+            margin-right: 80px;
+            margin-top: 6px;
+            font-size: 40px;
+
+            a {
+                padding-top: 3px;
+                border: 10px solid $azul;
+
+                &:hover {
+                    border: 10px solid scale-color($azul, $lightness: 20%);
+                }
+            }
         }
     }
 
     #home {
         img {
             margin: 0px auto;
-            margin-top: 60px;
+            margin-top: 120px;
             float: center;
             padding: 0px 60px;
             width: 100%;
@@ -502,7 +512,7 @@ footer {
 
         p {
             width: 100%;
-            padding: 0px 40px;
+            padding: 0px 80px;
         }
 
         img {
@@ -513,16 +523,19 @@ footer {
         #diferenciais {
             display: grid;
             background-color: $amarelo;
-            margin-top: -15px;
-            margin-bottom: 60px;
+            margin-top: -25px;
+            margin-bottom: 620px;
 
             h2 {
                 position: absolute;
                 float: center;
                 text-align: center;
+                font-size: 50px;
+                line-height: 1.25em;
                 padding: 40px;
                 width: 100%;
                 margin: 0px auto;
+                margin-top: 40px;
                 background-color: $amarelo;
             }
 
@@ -531,10 +544,11 @@ footer {
                 position: absolute;
                 float: center;
                 text-align: center;
-                padding: 40px;
+                font-size: 40px;
+                padding: 80px;
                 width: 100%;
                 margin: 0px auto;
-                margin-top: 100px;
+                margin-top: 200px;
                 background-color: $amarelo;
             }
         }
@@ -544,6 +558,7 @@ footer {
 
         text-align: center;
         margin: 0px auto;
+        margin-bottom: 40px;
         display: block;
         width: 100%;
 
@@ -553,9 +568,10 @@ footer {
 
         .produto {
 
+            min-width: 300px;
             padding: 0px 60px;
             margin: 0px auto;
-            min-width: 360px;
+            width: 100%;
 
             .imagem {
 
@@ -563,17 +579,36 @@ footer {
                 height: auto;
                 float: center;
 
+                img {
+                    height: 60%;
+                    width: 60%;
+                }
+    
+
                 .preco {
-                        margin-top: 68px;
-                        margin-left: -220px;
+                    width: 200px;
+                    height: 195px;
+                    margin-top: 160px;
+                    margin-left: -72px;
 
-                        h3 {
-                            margin-left: 22px;
-                        }
+                    img {
+                        width: 200px;
+                        height: 195px;
+                    }
 
-                        p {
-                            margin-left: 29px;
-                        }
+                    h3 {
+                        font-size: 60px;
+                        margin-left: 22px;
+                        margin-left: 30px;
+                        margin-top: 270px;
+                    }
+
+                    p {
+                        font-size: 24px;
+                        margin-left: 29px;
+                        margin-left: 37px;
+                        margin-top: 330px;
+                    }   
                 }
             }
 
@@ -590,10 +625,13 @@ footer {
                 }
 
                 p {
-                    max-width: 600px;
+                    max-width: none;
+                    width: 100%;
                     text-align: center;
+                    font-size: 14px;
                     float: center;
                     margin: 0px auto;
+                    padding: 0px 40px;
                     padding-bottom: 60px;
                 }
             }
@@ -602,8 +640,23 @@ footer {
 
     #reserva {
         height: 100%;
+
+        h1 {
+            font-size: 60px;
+        }
+
         form {
-            margin: 0px 40px;
+            margin: 0px 80px;
+
+            label {
+                font-size: 40px;
+            }
+
+            input, select {
+
+                height: 60px;
+                font-size: 30px;
+            }
         }
     }
 }
