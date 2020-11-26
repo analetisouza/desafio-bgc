@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
             font-size: 24px;
             line-height: 1.5em;
 
-            &[for="sim"], &[for="nao"]{
+            &[value="sim"], &[value="não"] {
                 font-family: $DCR;
                 padding-right: 80px;
             }
@@ -386,6 +386,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
                 height: 60px;
                 color: $azul;
                 background-color: $amarelo;
+                text-transform: uppercase;
                 font-family: $DCEB;
                 font-size: 24px;
                 margin: 20px auto;
@@ -464,7 +465,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
     #menu {
         height: 120px; 

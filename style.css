@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Dotties Chocolate Regular";
   src: url(fonts/DottiesChocolate-Regular.woff);
@@ -326,7 +327,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   line-height: 1.5em;
 }
 
-#reserva form label[for="sim"], #reserva form label[for="nao"] {
+#reserva form label[value="sim"], #reserva form label[value="não"] {
   font-family: "Dotties Chocolate Regular";
   padding-right: 80px;
 }
@@ -362,6 +363,7 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
   height: 60px;
   color: #2858A8;
   background-color: #FFDFA6;
+  text-transform: uppercase;
   font-family: "Dotties Chocolate Extra Bold";
   font-size: 24px;
   margin: 20px auto;
@@ -426,7 +428,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   #menu {
     height: 120px;
   }
